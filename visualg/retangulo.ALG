@@ -12,7 +12,7 @@ Inicio
    leia(altura)
 
    area <- base * altura
-   perimetro <- (base * 2) + (altura * 2)
+   perimetro <- 2 * (base + altura)
    diagonal <- RaizQ(Exp(base, 2) + Exp(altura, 2))
    
    escreval("AREA = ", area:8:4)
