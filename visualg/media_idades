@@ -2,27 +2,32 @@ Algoritmo "media_idades"
 
 Var
 
-   idade, soma, cont : inteiro
+   idade, contagem, numeroIdades, somaIdades : inteiro
    media : real
 
 Inicio
 
-   soma <- 0
-   cont <- 0
-   escreval("Digite as idades:")
+   numeroIdades <- 1
+
+   escreval("Digite as idades")
    leia(idade)
 
-   enquanto idade >= 0 faca
-      soma <- soma + idade
-      cont <- cont + 1
-      leia(idade)
-   fimenquanto
+   somaIdades <- idade
 
-   se cont = 0 entao
+   se idade < 0 entao
       escreva("IMPOSSIVEL CALCULAR")
    senao
-      media <- soma / cont
-      escreva("MEDIA = ", media:8:2)
+      enquanto idade >= 0 faca
+         leia(idade)
+         se idade < 0 entao
+            media <- somaIdades / numeroIdades
+            escreva("MEDIA = ", media:4:2)
+         fimse
+         numeroIdades <- numeroIdades + 1
+         somaIdades <- somaIdades + idade
+      fimenquanto
+
+      media <- somaIdades / numeroIdades
    fimse
 
 Fimalgoritmo
