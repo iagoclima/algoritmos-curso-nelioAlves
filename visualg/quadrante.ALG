@@ -2,34 +2,31 @@ Algoritmo "quadrante"
 
 Var
 
-   x, y : real
+   x, y : inteiro
 
 Inicio
 
-   escreval("Digite os valores das coordenadas X e Y: ")
+   escreval("Digite os valores das coordenadas X e Y:")
    leia(x)
    leia(y)
-
-
-   enquanto (x <> 0) e (y <>0) faca
-   se (x > 0) e (y > 0) entao
-      escreval("QUADRANTE Q1")
-   senao
-      se (x < 0) e (y > 0) entao
-      escreval("QUADRANTE Q2")
+   
+   enquanto (x <> 0) e (y <> 0) faca
+      se (x > 0) e (y > 0) entao
+         escreval("QUADRANTE Q1")
       senao
-         se (x < 0) e (y < 0) entao
-      escreval("QUADRANTE Q3")
+         se (x < 0) e (y > 0) entao
+            escreval("QUADRANTE Q2")
          senao
-         escreval("QUADRANTE Q4")
+            se (x < 0) e (y < 0) entao
+               escreval("QUADRANTE Q3")
+            senao
+               escreval("QUADRANTE Q4")
+            fimse
          fimse
       fimse
-   fimse
-   
-   escreval("Digite os valores das coordenadas X e Y: ")
-   leia(x)
-   leia(y)
+      
+      leia(x)
+      leia(y)
    fimenquanto
    
-
 Fimalgoritmo
