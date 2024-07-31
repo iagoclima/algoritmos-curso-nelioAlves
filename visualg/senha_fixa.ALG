@@ -2,24 +2,21 @@ Algoritmo "senha_fixa"
 
 Var
 
-   senha, senhaCorreta : inteiro
+   senhaValida, senha : inteiro
 
 
 Inicio
 
-
-   senhaCorreta <- 2002
-   
+   senhaValida <- 2002
    escreva("Digite a senha: ")
    leia(senha)
    
-   enquanto senha <> senhaCorreta faca
-      escreva("Senha Inválida! Tente novamente: ")
+   enquanto senha <> senhaValida faca
+      escreva("Senha Invalida! Tente novamente: ")
       leia(senha)
    fimenquanto
    
-   escreval("Acesso permitido!")
-
+   escreva("Acesso permitido!")
 
 
 Fimalgoritmo
