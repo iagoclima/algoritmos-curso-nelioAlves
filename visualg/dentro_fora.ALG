@@ -17,7 +17,7 @@ Inicio
       escreva("Digite um numero: ")
       leia(x)
       
-      se (x > 10) e (x < 20) entao
+      se (x >= 10) e (x <= 20) entao
          contagemDentro <- contagemDentro + 1
       senao
          contagemFora <- contagemfora + 1
