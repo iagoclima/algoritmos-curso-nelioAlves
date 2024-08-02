@@ -3,7 +3,6 @@ Algoritmo "par_impar"
 Var
 
    n, x, i : inteiro
-   par, impar, positivo, negativo : caractere
 
 Inicio
 
